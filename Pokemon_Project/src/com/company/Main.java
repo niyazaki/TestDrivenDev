@@ -24,11 +24,11 @@ public class Main {
         affinity.put("Dragon", 1.);
 
         //Normal
-        affinities.put("Normal", affinity);
+        affinities.put("Normal", (HashMap)affinity.clone());
         affinities.get("Normal").put("Rock", 0.5);
         affinities.get("Normal").put("Ghost", 0.);
 
-        affinities.put("Electric", affinity);
+        affinities.put("Electric", (HashMap)affinity.clone());
         affinities.get("Electric").put("Grass", 0.5);
         affinities.get("Electric").put("Electric", 0.5);
         affinities.get("Electric").put("Dragon", 0.5);
@@ -37,7 +37,7 @@ public class Main {
         affinities.get("Electric").put("Ground", 0.);
 
         System.out.print(affinities.get("Normal"));
-        //System.out.print(affinities.get("Electric"));
+        System.out.print(affinities.get("Electric"));
 	// write your code here
     }
 }
