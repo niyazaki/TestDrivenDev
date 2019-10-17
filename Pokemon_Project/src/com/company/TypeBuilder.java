@@ -148,4 +148,15 @@ abstract class TypeBuilder {
         affinities.put("Dragon", (HashMap)affinity.clone());
         affinities.get("Dragon").put("Dragon", 2.);
     }
+
+    public void CreateType(Type type){
+        affinities.put(type.name, type.offensive);
+        for (String defName : type.defensive.keySet()){
+            for (String nameType : affinities.keySet()){
+                if(defName == nameType){
+                    affinities.get(nameType).put(type.name, type.defensive.get(nameType));
+                }
+            }
+        }
+    }
 }

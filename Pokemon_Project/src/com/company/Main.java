@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Main {
 
     public static void main(String[] args) {
-        HashMap<String, HashMap<String, Double>> affinities = new HashMap<>();
+        /*HashMap<String, HashMap<String, Double>> affinities = new HashMap<>();
         HashMap<String, Double> affinity = new HashMap<>();
         affinity.put("Normal", 1.);
         affinity.put("Fire", 1.);
@@ -23,21 +23,52 @@ public class Main {
         affinity.put("Ghost", 1.);
         affinity.put("Dragon", 1.);
 
-        //Normal
-        affinities.put("Normal", (HashMap)affinity.clone());
-        affinities.get("Normal").put("Rock", 0.5);
-        affinities.get("Normal").put("Ghost", 0.);
+        //Psychic
+        affinities.put("Psychic", (HashMap)affinity.clone());
+        affinities.get("Psychic").put("Poison", 2.);
+        affinities.get("Psychic").put("Fighting", 2.);
+        affinities.get("Psychic").put("Psychic", 0.5);
 
-        affinities.put("Electric", (HashMap)affinity.clone());
-        affinities.get("Electric").put("Grass", 0.5);
-        affinities.get("Electric").put("Electric", 0.5);
-        affinities.get("Electric").put("Dragon", 0.5);
-        affinities.get("Electric").put("Water", 2.);
-        affinities.get("Electric").put("Flying", 2.);
-        affinities.get("Electric").put("Ground", 0.);
+        //Bug
+        affinities.put("Bug", (HashMap)affinity.clone());
+        affinities.get("Bug").put("Grass", 2.);
+        affinities.get("Bug").put("Poison", 2.);
+        affinities.get("Bug").put("Psychic", 2.);
+        affinities.get("Bug").put("Fire", 0.5);
+        affinities.get("Bug").put("Fighting", 0.5);
+        affinities.get("Bug").put("Flying", 0.5);
+        affinities.get("Bug").put("Ghost", 0.5);
 
-        System.out.print(affinities.get("Normal"));
-        System.out.print(affinities.get("Electric"));
-	// write your code here
+        //Dark
+        HashMap<String, Double> offensiveDark = (HashMap)affinity.clone();
+        offensiveDark.put("Ice", 0.5);
+        offensiveDark.put("Psychic", 2.);
+        offensiveDark.put("Ghost", 2.);
+
+        HashMap<String, Double> defensiveDark = (HashMap)affinity.clone();
+        defensiveDark.put("Dark", 0.5);
+        defensiveDark.put("Fighting", 2.);
+        defensiveDark.put("Psychic", 0.);
+        defensiveDark.put("Bug", 2.);
+        defensiveDark.put("Ghost", 0.5);
+
+        Type dark = new Type("Dark", offensiveDark, defensiveDark);
+
+        affinities.put(dark.name, dark.offensive);
+        for (String defName : dark.defensive.keySet()){
+            for (String nameType : affinities.keySet()){
+                if(defName == nameType){
+                    affinities.get(nameType).put(dark.name, dark.defensive.get(nameType));
+                }
+            }
+        }
+
+        System.out.print(affinities.get("Psychic"));
+        System.out.print(affinities.get("Bug"));
+        System.out.print(affinities.get("Dark"));*/
+
+        Type
+
+        // write your code here
     }
 }
