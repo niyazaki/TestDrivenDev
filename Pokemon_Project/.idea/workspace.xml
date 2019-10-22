@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f48823-c1cf-4972-92f0-2c9dee220e5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/ConcretePokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pokemon_Project/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pokemon_Project/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pokemon_Project/com/company/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pokemon_Project/com/company/Pokemon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Pokemon_Project/com/company/TypeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pokemon_Project/com/company/TypeBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PokemonBuilder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
