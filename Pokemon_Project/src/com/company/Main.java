@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Main {
 
     public static void main(String[] args) {
-        /*HashMap<String, HashMap<String, Double>> affinities = new HashMap<>();
+        HashMap<String, HashMap<String, Double>> affinities = new HashMap<>();
         HashMap<String, Double> affinity = new HashMap<>();
         affinity.put("Normal", 1.);
         affinity.put("Fire", 1.);
@@ -65,9 +65,8 @@ public class Main {
 
         System.out.print(affinities.get("Psychic"));
         System.out.print(affinities.get("Bug"));
-        System.out.print(affinities.get("Dark"));*/
+        System.out.print(affinities.get("Dark"));
 
-        Type
 
         // write your code here
     }

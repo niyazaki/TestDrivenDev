@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56f48823-c1cf-4972-92f0-2c9dee220e5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Fight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/ConcretePokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Pokemon.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,10 +62,10 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="56f48823-c1cf-4972-92f0-2c9dee220e5b" name="Default Changelist" comment="" />
-      <created>1571741014844</created>
+      <created>1571737638927</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571741014844</updated>
+      <updated>1571737638927</updated>
     </task>
     <servers />
   </component>

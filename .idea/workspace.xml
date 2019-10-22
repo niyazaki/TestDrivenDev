@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccf6f936-2d0d-43a7-8600-070b945c7a4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Pokemon_Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Project/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e9d8b24-aff6-427f-a1e6-0aa9af75a9f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Pokemon_Project/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Project/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +13,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1SYU1jqH3ZLpN4fhL44JUuEScBw" />
+  <component name="ProjectId" id="1SYPZNC5spzFeb06L6G9r3H9nGA" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Pokemon_Project" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -31,11 +34,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ccf6f936-2d0d-43a7-8600-070b945c7a4a" name="Default Changelist" comment="" />
-      <created>1571739809354</created>
+      <changelist id="3e9d8b24-aff6-427f-a1e6-0aa9af75a9f1" name="Default Changelist" comment="" />
+      <created>1571737610500</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571739809354</updated>
+      <updated>1571737610500</updated>
     </task>
     <servers />
   </component>
