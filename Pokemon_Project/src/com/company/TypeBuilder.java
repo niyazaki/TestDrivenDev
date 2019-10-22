@@ -2,7 +2,7 @@ package com.company;
 import java.util.HashMap;
 
 abstract class TypeBuilder {
-    private HashMap<String, HashMap<String, Double>> affinities = new HashMap<>();
+    protected HashMap<String, HashMap<String, Double>> affinities = new HashMap<>();
 
     TypeBuilder() {
         HashMap<String, Double> affinity = new HashMap<>();
@@ -147,14 +147,27 @@ abstract class TypeBuilder {
         //Dragon
         affinities.put("Dragon", (HashMap)affinity.clone());
         affinities.get("Dragon").put("Dragon", 2.);
-    }
 
-    public void CreateType(Type type){
-        affinities.put(type.name, type.offensive);
-        for (String defName : type.defensive.keySet()){
+        //Create new type Dark
+        HashMap<String, Double> offensiveDark = (HashMap)affinity.clone();
+        offensiveDark.put("Ice", 0.5);
+        offensiveDark.put("Psychic", 2.);
+        offensiveDark.put("Ghost", 2.);
+
+        HashMap<String, Double> defensiveDark = (HashMap)affinity.clone();
+        defensiveDark.put("Dark", 0.5);
+        defensiveDark.put("Fighting", 2.);
+        defensiveDark.put("Psychic", 0.);
+        defensiveDark.put("Bug", 2.);
+        defensiveDark.put("Ghost", 0.5);
+        CreateType("Dark", offensiveDark, defensiveDark);
+    }
+    private void CreateType(String name, HashMap<String, Double> offensive, HashMap<String, Double> defensive){
+        affinities.put(name, offensive);
+        for (String defName : defensive.keySet()){
             for (String nameType : affinities.keySet()){
-                if(defName == nameType){
-                    affinities.get(nameType).put(type.name, type.defensive.get(nameType));
+                if (defName == nameType){
+                    affinities.get(nameType).put(name, defensive.get(nameType));
                 }
             }
         }
