@@ -5,6 +5,7 @@ Cette application a pour objectif de simuler un simple combat entre deux Pokémo
 
 ## Diagramme de classe
 Basée sur le modèle Builder (design pattern) l'application permettra de créer deux instances de Pokémons possédant un nom, des statistiques particulières (points de vie, puissance d'attaque, défense, vitesse) et un type afin de les faire combattre ensembles.
+
 ![Class Diagram](https://zupimages.net/up/19/41/plx6.png)
 
 Nous prendrons en compte uniquement les Pokémons de la première génération (il n'y aura donc que 15 types différents). Nous avons choisi ce design pattern afin d'éviter la répétition du code très proche entre les différents types.
@@ -33,14 +34,15 @@ Etant vouée à évoluer, il faut nécessairement qu'elle soit simple à mainten
 
 ## Mesures sur les critères de qualité
 ### Évolutivité
-
+L'architecture Builder est respectée, ce qui normalement permet d'attester de l'évolutivité de notre pogramme.
 ### Facilité d'utilisation
-
+Bien que ce soit un critère assez subjectif, le programme est relativement simple étant donné qu'il réside en quelques aspects : créer deux Pokemon concrets et chercher le vainqueur parmi eux avec la méthode Winner.  
 
 ### Efficacité
-
+Temps nécessaire pour obtenir un winner: 1s et 117ms obtenus
 
 ### Maintenabilité
+
 
 
 
@@ -51,3 +53,4 @@ El Bakkoury Yassine 16050
 
 ## Contraintes
 Le programme utilisé est IntelliJ.
+
