@@ -13,5 +13,15 @@ public class ConcretePokemon extends PokemonBuilder {
     public HashSet weaknesses;
     public HashSet immunities;
 
-
+    ConcretePokemon(String name, ConcreteType type, Stats stats){
+        this.name = name;
+        this.hp = stats.hp;
+        this.atk = stats.atk;
+        this.def = stats.def;
+        this.spd = stats.spd;
+        this.type = type;
+        this.strengths = type.strenghts;
+        this.weaknesses = type.weaknesses;
+        this.immunities = type.immunities;
+    }
 }
