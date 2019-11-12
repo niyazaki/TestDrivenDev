@@ -34,14 +34,15 @@ Etant vouée à évoluer, il faut nécessairement qu'elle soit simple à mainten
 
 ## Mesures sur les critères de qualité
 ### Évolutivité
-
+L'architecture Builder est respectée, ce qui normalement permet d'attester de l'évolutivité de notre pogramme.
 ### Facilité d'utilisation
-
+Bien que ce soit un critère assez subjectif, le programme est relativement simple étant donné qu'il réside en quelques aspects : créer deux Pokemon concrets et chercher le vainqueur parmi eux avec la méthode Winner.  
 
 ### Efficacité
-
+Temps nécessaire pour obtenir un winner: 1s et 117ms obtenus
 
 ### Maintenabilité
+
 
 
 
@@ -52,3 +53,4 @@ El Bakkoury Yassine 16050
 
 ## Contraintes
 Le programme utilisé est IntelliJ.
+
