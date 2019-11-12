@@ -3,29 +3,23 @@ import java.lang.Math;
 
 public class Fight
 {
-    private String name;
-    private TypeBuilder type;
-    private int pv;
-    private int attack;
-    private int defense;
-    private int speed;
     private double bonus;
-    private Pokemon first;
-    private Pokemon second;
+    private ConcretePokemon first;
+    private ConcretePokemon second;
     private int pileOuFace;
+    public String winner;
 
-    void Attack(Pokemon pokemon1, Pokemon pokemon2) {
-        pokemon1.typeAffinities.get("key");
-        if (pokemon1.strengths.contains(pokemon2.type))
+    private void Attack(ConcretePokemon pokemon1, ConcretePokemon pokemon2) {
+        if (pokemon1.type.strenghts.contains(pokemon2.type.name))
         {
             bonus=2;
 
         }
-        if (pokemon1.weaknesses.contains(pokemon2.type))
+        else if (pokemon1.type.weaknesses.contains(pokemon2.type.name))
         {
             bonus=0.5;
         }
-        if(pokemon1.immunities.contains(pokemon2.type))
+        else if(pokemon1.type.immunities.contains(pokemon2.type.name))
         {
             bonus=0;
         }
@@ -33,22 +27,22 @@ public class Fight
         {
             bonus=1;
         }
-        int step = (int) (bonus * (pokemon1.attack-pokemon2.defense));
+        int step = (int) (bonus * (pokemon1.atk-pokemon2.def));
         pokemon2.hp = (pokemon2.hp - step);
     }
 
-    String Winner(Pokemon pokemon1, Pokemon pokemon2)
+    private String Winner(ConcretePokemon pokemon1, ConcretePokemon pokemon2)
     {
         while (pokemon1.hp > 0 & pokemon2.hp > 0) {
-            if (pokemon1.speed > pokemon2.speed) {
+            if (pokemon1.spd > pokemon2.spd) {
                 first = pokemon1;
                 second = pokemon2;
             }
-            if (pokemon1.speed < pokemon2.speed) {
+            if (pokemon1.spd < pokemon2.spd) {
                 first = pokemon2;
                 second = pokemon1;
             }
-            if (pokemon1.speed == pokemon2.speed) {
+            if (pokemon1.spd == pokemon2.spd) {
                  pileOuFace = (int)(Math.random() * (2));
                  if(pileOuFace==0)
                  {
@@ -65,13 +59,16 @@ public class Fight
             Attack(second, first);
         }
         if (pokemon2.hp<=0) {
-            return (String) pokemon1.name;
+            return pokemon1.name;
         }
         else
         {
-            return (String) pokemon2.name;
+            return  pokemon2.name;
         }
 
     }
 
+    Fight(ConcretePokemon pokemon1, ConcretePokemon pokemon2){
+        winner = Winner(pokemon1 ,pokemon2);
+    }
 }
