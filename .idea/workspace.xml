@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e9d8b24-aff6-427f-a1e6-0aa9af75a9f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Pokemon_Project/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Project/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pokemon_Project/src/com/company/PokemonBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pokemon_Project/src/com/company/PokemonBuilder.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +48,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
