@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56f48823-c1cf-4972-92f0-2c9dee220e5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/com/company/FightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/com/company/FightTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FightTest">
+  <component name="RunManager" selected="JUnit.FightTest.metrics">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Pokemon_Project" />
@@ -114,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FightTest" />
         <item itemvalue="JUnit.FightTest.metrics" />
+        <item itemvalue="JUnit.FightTest" />
         <item itemvalue="JUnit.All in Pokemon_Project" />
         <item itemvalue="Application.Main" />
       </list>
