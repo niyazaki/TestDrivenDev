@@ -5,6 +5,7 @@ Cette application a pour objectif de simuler un simple combat entre deux Pokémo
 
 ## Diagramme de classe
 Basée sur le modèle Builder (design pattern) l'application permettra de créer deux instances de Pokémons possédant un nom, des statistiques particulières (points de vie, puissance d'attaque, défense, vitesse) et un type afin de les faire combattre ensembles.
+
 ![Class Diagram](https://zupimages.net/up/19/41/plx6.png)
 
 Nous prendrons en compte uniquement les Pokémons de la première génération (il n'y aura donc que 15 types différents). Nous avons choisi ce design pattern afin d'éviter la répétition du code très proche entre les différents types.
