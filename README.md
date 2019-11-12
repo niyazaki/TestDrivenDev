@@ -39,14 +39,20 @@ L'architecture Builder est respectée, ce qui normalement permet d'attester de l
 Bien que ce soit un critère assez subjectif, le programme est relativement simple étant donné qu'il réside en quelques aspects : créer deux Pokemon concrets et chercher le vainqueur parmi eux avec la méthode Winner.  
 
 ### Efficacité
-Temps nécessaire pour obtenir un winner: 1s et 117ms obtenus
+Temps nécessaire pour obtenir un winner: 0.422ms obtenu. 
 
 ### Maintenabilité
+
+## Tests JUnits
+Nous avons réalisé quelques tests pour s'assurer du bon fonctionnement de notre code: 
+
+*Nous avons créé deux Pokémon et avons appelé la fonction Attack. La fonction Attack permet de réduire la vie des deux Pokemons. Donc le but était de vérifier que nous avons le bon nombre de "hp" (points de vie) et la fonction réalisait bien ce que l'on demandait.
+
+*Un test a été réalisé également sur la fonction Winner. Deux Pokémon ont combattu ensemble, sachant le gagnant, nous avons regardé si la fonction renvoyait bien le bon Pokémon. Le test s'est également bien déroulé.
 
 ### Test du programme
 Afin de tester le programme, nous avons dans la fonction main créé 2 pokemons de la classe ConcretePokemon. Dans le constructeur de ConcretePokemon, on indique le nom, le type et les statistique (santé, attaque, deffense,...) du pokemon.
 On fait ensuite combatre les 2 pokemons en créant un un objet de la classe Fight qui prend les 2 pokemons en paramétres. Le nom du gagnant se trouve dans l'attribut winner de l'objet.
-
 
 ## Equipe
 Kassabeh Zakariya 16131
