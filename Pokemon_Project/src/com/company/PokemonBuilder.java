@@ -3,20 +3,8 @@ package com.company;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class PokemonBuilder {
+abstract class PokemonBuilder {
 
-    PokemonBuilder(String name, ConcreteType type, Stats stats) {
-        ConcretePokemon pokemon = new ConcretePokemon();
-        pokemon.name = name;
-        pokemon.hp = stats.hp;
-        pokemon.atk = stats.atk;
-        pokemon.def = stats.def;
-        pokemon.spd = stats.spd;
-        pokemon.type = type;
-        pokemon.strengths = type.strenghts;
-        pokemon.weaknesses = type.weaknesses;
-        pokemon.immunities = type.immunities;
-    }
     public ConcretePokemon CreatePokemon(){
         Scanner myObj = new Scanner(System.in);
         String pokemonName;
@@ -41,7 +29,7 @@ public class PokemonBuilder {
         System.out.println("Enter Pokemon Speed");
         pokemonSpd = myObj.nextInt();
 
-        ConcretePokemon newPokemon = new PokemonBuilder(pokemonName, new ConcreteType(pokemonType), new Stats(pokemonHp, pokemonAtk, pokemonDef, pokemonSpd));
-        return newPokemon
+        ConcretePokemon newPokemon = new ConcretePokemon(pokemonName, new ConcreteType(pokemonType), new Stats(pokemonHp, pokemonAtk, pokemonDef, pokemonSpd));
+        return newPokemon;
     }
 }

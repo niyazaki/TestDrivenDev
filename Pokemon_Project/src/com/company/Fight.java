@@ -13,7 +13,6 @@ public class Fight
         if (pokemon1.type.strenghts.contains(pokemon2.type.name))
         {
             bonus=2;
-
         }
         else if (pokemon1.type.weaknesses.contains(pokemon2.type.name))
         {
@@ -27,7 +26,7 @@ public class Fight
         {
             bonus=1;
         }
-        int step = (int) (bonus * (pokemon1.atk-pokemon2.def));
+        int step = (int) (bonus * pokemon1.atk-pokemon2.def);
         pokemon2.hp = (pokemon2.hp - step);
     }
 
