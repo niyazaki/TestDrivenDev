@@ -43,16 +43,17 @@ Temps nécessaire pour obtenir un winner: 0.422ms obtenu.
 
 ### Maintenabilité
 
+
 ## Tests JUnits
 Nous avons réalisé quelques tests pour s'assurer du bon fonctionnement de notre code: 
 
--Nous avons créé deux Pokémon et avons appelé la fonction Attack. La fonction Attack permet de réduire la vie des deux Pokemons. Donc le but était de vérifier que nous avons le bon nombre de "hp" (points de vie) et la fonction réalisait bien ce que l'on demandait.
+-Nous avons créé deux Pokémons et avons appelé la fonction Attack. La fonction Attack permet de réduire la vie des deux Pokémons. Donc le but était de vérifier que nous avons le bon nombre de "hp" (points de vie) et la fonction réalisait bien ce qui est demandé.
 
--Un test a été réalisé également sur la fonction Winner. Deux Pokémon ont combattu ensemble, sachant le gagnant, nous avons regardé si la fonction renvoyait bien le bon Pokémon. Le test s'est également bien déroulé.
+-Un test a été réalisé également sur la fonction Winner. Deux Pokémons ont combattu ensemble, sachant le gagnant, nous avons regardé si la fonction renvoyait bien le bon Pokémon. Le test s'est également bien déroulé.
 
-### Test du programme
-Afin de tester le programme, nous avons dans la fonction main créé 2 pokemons de la classe ConcretePokemon. Dans le constructeur de ConcretePokemon, on indique le nom, le type et les statistique (santé, attaque, deffense,...) du pokemon.
-On fait ensuite combatre les 2 pokemons en créant un un objet de la classe Fight qui prend les 2 pokemons en paramétres. Le nom du gagnant se trouve dans l'attribut winner de l'objet.
+## Execution du programme
+Afin d'executer le programme, nous créons dans la fonction Main autant de Pokémons que l'on souhaite, avec la classe ConcretePokemon. Dans le constructeur de ConcretePokemon, on indique le nom, le type et les statistique (santé, attaque, défense ...) du Pokemon.
+On fait ensuite combatre deux Pokémons en appelant la méthode Winner de la classe Fight. Un string est renvoyé.
 
 ## Equipe
 Kassabeh Zakariya 16131
