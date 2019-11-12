@@ -30,7 +30,7 @@ class FightTest {
         long finish = System.nanoTime();
         long timeElapsed = finish - start;
         System.out.print(timeElapsed);
-        System.out.print("HELLLLLLLO";
+        System.out.print("HELLLLLLLO");
 
     }
 }
