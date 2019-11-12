@@ -31,7 +31,23 @@ Elle doit être rapide et demander peu de performances. Si cela devait être imp
 ### Maintenabilité
 Etant vouée à évoluer, il faut nécessairement qu'elle soit simple à maintenir et facile à comprendre afin de pouvoir y ajouter rapidement de nouvelles fonctionnalités et s'assurer que celles déjà présentes fonctionnent encore.
 
+## Mesures sur les critères de qualité
+### Évolutivité
+
+### Facilité d'utilisation
+
+
+### Efficacité
+
+
+### Maintenabilité
+
+
+
 ## Equipe
 Kassabeh Zakariya 16131
 El Haddadi Yassine 16146
 El Bakkoury Yassine 16050
+
+## Contraintes
+Le programme utilisé est IntelliJ.

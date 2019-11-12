@@ -32,6 +32,7 @@ public class Fight
     }
 
     private String Winner(ConcretePokemon pokemon1, ConcretePokemon pokemon2)
+
     {
         while (pokemon1.hp > 0 & pokemon2.hp > 0) {
             if (pokemon1.spd > pokemon2.spd) {
