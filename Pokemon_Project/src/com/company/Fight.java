@@ -68,7 +68,7 @@ public class Fight
 
     }
 
-    //Fight(ConcretePokemon pokemon1, ConcretePokemon pokemon2){
-     //   winner = Winner(pokemon1 ,pokemon2);
-    //}
+    Fight(ConcretePokemon pokemon1, ConcretePokemon pokemon2){
+        winner = Winner(pokemon1 ,pokemon2);
+    }
 }

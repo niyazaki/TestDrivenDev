@@ -43,7 +43,9 @@ Temps nécessaire pour obtenir un winner: 1s et 117ms obtenus
 
 ### Maintenabilité
 
-
+### Test du programme
+Afin de tester le programme, nous avons dans la fonction main créé 2 pokemons de la classe ConcretePokemon. Dans le constructeur de ConcretePokemon, on indique le nom, le type et les statistique (santé, attaque, deffense,...) du pokemon.
+On fait ensuite combatre les 2 pokemons en créant un un objet de la classe Fight qui prend les 2 pokemons en paramétres. Le nom du gagnant se trouve dans l'attribut winner de l'objet.
 
 
 ## Equipe
