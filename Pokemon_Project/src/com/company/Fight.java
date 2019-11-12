@@ -3,13 +3,13 @@ import java.lang.Math;
 
 public class Fight
 {
-    private double bonus;
-    private ConcretePokemon first;
-    private ConcretePokemon second;
-    private int pileOuFace;
-    public String winner;
+    static private double  bonus;
+    static private ConcretePokemon first;
+    static private ConcretePokemon second;
+    static private int pileOuFace;
+    static public String winner;
 
-    private void Attack(ConcretePokemon pokemon1, ConcretePokemon pokemon2) {
+    static void Attack(ConcretePokemon pokemon1, ConcretePokemon pokemon2) {
         if (pokemon1.type.strenghts.contains(pokemon2.type.name))
         {
             bonus=2;
@@ -30,7 +30,7 @@ public class Fight
         pokemon2.hp = (pokemon2.hp - step);
     }
 
-    private String Winner(ConcretePokemon pokemon1, ConcretePokemon pokemon2)
+    static String Winner(ConcretePokemon pokemon1, ConcretePokemon pokemon2)
 
     {
         while (pokemon1.hp > 0 & pokemon2.hp > 0) {
@@ -68,7 +68,7 @@ public class Fight
 
     }
 
-    Fight(ConcretePokemon pokemon1, ConcretePokemon pokemon2){
-        winner = Winner(pokemon1 ,pokemon2);
-    }
+    //Fight(ConcretePokemon pokemon1, ConcretePokemon pokemon2){
+     //   winner = Winner(pokemon1 ,pokemon2);
+    //}
 }
