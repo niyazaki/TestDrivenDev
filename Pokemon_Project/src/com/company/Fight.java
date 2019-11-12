@@ -14,7 +14,7 @@ public class Fight
     private Pokemon second;
     private int pileOuFace;
 
-    void Attack(Pokemon pokemon1, Pokemon pokemon2) {
+    static void Attack(ConcretePokemon pokemon1, ConcretePokemon pokemon2) {
         pokemon1.typeAffinities.get("key");
         if (pokemon1.strengths.contains(pokemon2.type))
         {
@@ -37,7 +37,7 @@ public class Fight
         pokemon2.hp = (pokemon2.hp - step);
     }
 
-    String Winner(Pokemon pokemon1, Pokemon pokemon2)
+    static String Winner(ConcretePokemon pokemon1, ConcretePokemon pokemon2)
     {
         while (pokemon1.hp > 0 & pokemon2.hp > 0) {
             if (pokemon1.speed > pokemon2.speed) {
