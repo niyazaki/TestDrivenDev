@@ -20,7 +20,7 @@ class FightTest {
     void winner() {
         ConcretePokemon pikachu = new PokemonBuilder("Pikachu", new ConcreteType("Electric"), new Stats(35,55,40,90));
         ConcretePokemon squirtle = new PokemonBuilder("Squirtle", new ConcreteType("Water"), new Stats(10,48,65,43));
-        assertEquals("pikachu", Fight.Winner(pikachu, squirtle));
+        assertEquals("Pikachu", Fight.Winner(pikachu, squirtle));
 
     }
     @Test
